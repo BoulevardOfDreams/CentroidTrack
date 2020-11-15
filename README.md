@@ -36,4 +36,4 @@ This reduce the amount of box required to track and increase the frame per secon
 
 ## **Results:**
 
-![Gif of object tracking](animation.gif)
+![alt tag](https://github.com/BoulevardOfDreams/CentroidTrack/issues/1)
