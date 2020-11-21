@@ -29,13 +29,19 @@ This module calculates the Iou of overlapping box.                              
 If Iou is greater than threshold (means highly overlap), box which has lower confidence level will be removed. <br />
 This reduce the amount of box required to track and increase the frame per second.                             <br />
 
-
-
-
-
-
 ## **Results:**
 
 ![Image 1](https://user-images.githubusercontent.com/42071698/99190934-7c644d00-27a4-11eb-810c-6375af71ecef.JPG)
 ![Image 2](https://user-images.githubusercontent.com/42071698/99190952-91d97700-27a4-11eb-94ac-0a14892c2a82.JPG)
 ![Image 3](https://user-images.githubusercontent.com/42071698/99190958-956cfe00-27a4-11eb-916a-5e93a14e4494.JPG)
+
+## NOTE:
+
+There are quite a few improvement required for the project.<br>
+1.) SSD will sometime have multiple overlapping bounding box on multiple human object that are too close together. (This is solved by the iou.py proposed) 
+<br>
+2.) When human object size are too small. (smaller than 150 x 150 size), SSD will have difficulty recognizing them.
+<br>
+3.) If number of object tracked is > 10, FPS will slow down.( Quite a lot processing power required to compute the object tracking )
+<br>
+This project is still new to me, i will find time to solve it : )
